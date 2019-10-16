@@ -1,0 +1,92 @@
+<!-- Trabalho dos alunos: Douglas RA:2205289 e Djhonatta Greselle RA: 2206218 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULÁRIO HTML</title>
+    
+</head>
+<body>
+    <h1>FORMULÁRIO EM HTML</h1>
+    <form>
+        
+       <fieldset id="usuario"><legend><h2>Dados pessoais:</h2></legend>
+            Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="35" placeholder="Nome Completo">&nbsp;&nbsp;
+            Data de Nascimento: <input type="date" name="dNasc" id="nascimento">&nbsp;&nbsp;
+            Nacionalidade: <input type="text" name="nacao" id="pais" placeholder="país onde vive" >&nbsp;&nbsp;
+            <fieldset><legend>sexo</legend>
+                <input type="radio" name="sexo" id="m"><label for="m">masculino</label><br>
+                <input type="radio" name="sexo" id="f"><label for="f">feminino</label><br>
+                <input type="radio" name="sexo" id="outro"><label for="outro">outro</label><br>
+            </fieldset>
+        </fieldset>
+         
+        <fieldset id="moradia"><legend><h2>Dados residênciais:</h2></legend>
+            
+            <p><label for="ccity">Cidade</label> <input type="text" name="city" id="ccity" size="20" maxlength="35" placeholder="cidade onde mora"></p>
+            
+            <p><label for="cRua">Rua/Av:</label> <input type="text" name="rua" id="cRua" size="20" maxlength="35" placeholder="rua"></p>
+            
+            <p><label for="cBairro">Bairro:</label> <input type="text" name="bairro" id="cBairro" size="20" maxlength="35" placeholder="bairro onde mora"></label></p>
+            
+            <p><label for="cEstado">Estado:</label> <input type="text" name="estado" id="cEstado" size="20" maxlength="35" placeholder="estado onde mora"></p>
+            
+            <p><label for="cCep">CEP:</label> <input type="number" name="cep" id="cCep" size="20" maxlength="35" placeholder="CEP de sua cidade"></p>
+            
+            <legend>COMPLEMENTO</legend>
+        
+                <input type="radio" name="moradia" id="casa"><label for="casa">casa</label><br>
+                <input type="radio" name="moradia" id="apart"><label for="apart">apartamento</label><br>
+                <input type="radio" name="moradia" id="sitio"><label for="sitio">sitío</label><br>
+                <input type="radio" name="moradia" id="cond"><label for="cond">condomínio</label><br>
+                <input type="radio" name="moradia" id="out"><label for="out">outro</label>
+                <P><label for="cDoc">DOC. INSCRIÇÃO - (N e Série):</label> <input type="number" name="doc" id="cDoc" ></P>
+        </fieldset>
+        
+        <fieldset id="empresa"><legend><h2>Dados Empresariais:</h2></legend>
+            <p><label for="cEmpresa">EMPRESA:</label> <input type="text" name="empresa" id="cEmpresa"> </p>
+
+            <p><label for="cCnpj">Nº CNPJ:</label> <input type="number" name="cnpj" id="cCnpj" ></p>
+            
+            <p><label for="empRuaAv">RUA/AV:</label> <input type="text" name="ruaAv" id="empRuaAv"></p> 
+           
+            <p><label for="empNum">Nº</label> <input type="text" name="num" id="empNum"></p>
+            
+            <p><label for="empComp">COMPLEMENTO:</label> <input type="text" name="comp" id="empComp"></p>
+           
+            <p><label for="empBairro">BAIRRO:</label> <input type="text" name="bairro" id="empBairro"></p>
+            
+            <p><label for="empCity">CIDADE:</label> <input type="text" name="city" id="empCity"></p>
+           
+            <p><label for="empEstado">ESTADO:</label> <input type="text" name="estado" id="empEstado"></p>
+            
+            <p><label for="enpCep">CEP:</label> <input type="number" name="cep" id="enpCep"></p>
+            
+            <p><label for="empCid">CID:</label> <input type="text" name="ruaAv" id="empCid"></p>
+        </fieldset>
+            
+            
+              
+            <fieldset id="complemento"><legend><h2>Dados Complementares:</h2></legend>
+                TEM OUTRA ATIVIDADE COM VINCULAÇÃO À PREVIDÊNCIA SOCIAL ?<br>
+                <input type="radio" name="opcao" id="sim"><label for="sim">SIM</label> <br>
+                <input type="radio" name="opcao" id="nao"><label for="nao">NÃO</label>
+                <p><label for="cNomeProc"> NOME DO PROCURADOR OU CURADOR:</label> <input type="text" name="nome" id="cNomeProc" size="20" maxlength="30"></p>
+                <p><label for="cAtestado">ATESTADO DE AFASTAMENTO DO TRABALHO:</label>  <input type="file" name="atestado" id="cAtestado"></p>
+                <p><label for="ultDay">ÚLTIMO DIA DE TRABALHO DO SEGURADO:</label> <input type="date" name="ultimoDia" id="ultDay"></p>
+            
+                <legend> MOTIVO DO AFASTAMENTO: </legend>
+                <input list="motivos" name="doenca">
+                <datalist id="motivos">
+                  <option value="Doença">
+                  <option value="Acidente do Trabalho">
+                  <option value="Férias">
+                  <option value="Acidente de qualquer Natureza">
+                </datalist>
+            </fieldset>
+        
+            <p><button>ENVIAR FORMULÁRIO!</button></p>
+    </form>
+</body>
+</html>
